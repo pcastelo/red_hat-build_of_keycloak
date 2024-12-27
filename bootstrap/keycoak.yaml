@@ -14,9 +14,9 @@ spec:
     namespace: openshift-gitops
     server: 'https://kubernetes.default.svc'
   source:
-    path: resources/keycloak-development
+    path: resources/keycloak
 # we specify the folder for the files
-    repoURL: 'https://github.com/Everything-is-Code/red_hat-build_of_keycloak'
+    repoURL: 'https://github.com/pcastelo/red_hat-build_of_keycloak'
 # the repository url
     targetRevision: HEAD
 # and branch, in this case HEAD / main

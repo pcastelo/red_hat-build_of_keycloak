@@ -6,8 +6,6 @@ resources:
 - 00_keycloak-namespace.yaml
 - 01_keycloak-operatorgroup.yaml
 - 02_keycloak-subscription.yaml
-- 03_pgsql-db.yaml
-- 04_secrets.yaml
-- 05_keycloak-development.yaml
-# - 06_keycloak-route.yaml
-- 07_open-ldap.yaml
+- 03_secrets.yaml
+- 04_keycloak-development.yaml
+# - 05_keycloak-route.yaml

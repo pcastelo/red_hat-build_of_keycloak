@@ -1,0 +1,21 @@
+apiVersion: k8s.keycloak.org/v2alpha1
+kind: Keycloak
+metadata:
+  name: keycloak
+  namespace: keycloak
+spec:
+  db:
+    passwordSecret:
+      key: password
+      name: keycloak-db-secret
+    url: jdbc:oracle:thin:@//10.128.247.245:1521/DEVRHBKDB
+    usernameSecret:
+      key: username
+      name: keycloak-db-secret
+    vendor: oracle
+  hostname:
+    hostname: keycloak-keycloak.apps.cluster-gqh2v.dynamic.redhatworkshops.io
+  http:
+    tlsSecret: keycloak-tls
+  image: quay.io/pcastelo/keycloak-rhel9-24-oracle:latest
+  instances: 2    
