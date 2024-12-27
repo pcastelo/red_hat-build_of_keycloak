@@ -1,4 +1,4 @@
-FROM registry.redhat.io/rhbk/keycloak-rhel9:24
+FROM registry.redhat.io/rhbk/keycloak-rhel9:26
 ADD --chown=keycloak:keycloak --chmod=644 https://repo1.maven.org/maven2/com/oracle/database/jdbc/ojdbc11/23.3.0.23.09/ojdbc11-23.3.0.23.09.jar /opt/keycloak/providers/ojdbc11.jar
 ADD --chown=keycloak:keycloak --chmod=644 https://repo1.maven.org/maven2/com/oracle/database/nls/orai18n/23.3.0.23.09/orai18n-23.3.0.23.09.jar /opt/keycloak/providers/orai18n.jar
 # Setting the build parameter for the database:
